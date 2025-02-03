@@ -9,7 +9,18 @@ public class DivisibleBy3 {
          */
         int a[] = {12,4,9,21,23,28,15,19,25,32,6};
         
-        
+        ArrayList<Integer> A = new ArrayList<Integer>();
+
+
+        for(int i=0;i<a.length;i++) {
+            if((a[i]%3==0)){
+                A.add(a[i]);
+            }
+        }
+
+        for(int i=0;i<A.size();i++){
+            System.out.print(A.get(i)+" ");
+        }
     }
 
 }
