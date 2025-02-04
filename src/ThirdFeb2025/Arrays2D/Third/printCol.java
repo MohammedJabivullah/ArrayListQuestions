@@ -1,4 +1,5 @@
 package ThirdFeb2025.Arrays2D.Third;
+import java.util.Scanner;
 
 public class printCol {
     public static void main(String[] args) {
@@ -15,6 +16,24 @@ public class printCol {
             30  70  110 
             40  80  120
          */
+         Scanner sc = new Scanner(System.in);
+
+        int N = sc.nextInt();
+        int M = sc.nextInt();
+
+        int[][] a = new int[N][M];
+
+        for(int i=0;i<N;i++){
+            for(int j=0;j<M;j++){
+                a[i][j] = sc.nextInt();
+            }
+        }
+         for(int i=0;i<M;i++){
+            for(int j=0;j<N;j++){
+                System.out.print(a[j][i]+" ");
+            }
+             System.out.println("");
+        }
     }
 
 }
