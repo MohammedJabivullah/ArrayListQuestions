@@ -16,7 +16,10 @@ public class OutputOne {
        }
    }
 }
+        Output: ERROR Indexout of bound there is no mat[3][i]
+
          */
+
     }
 
 }

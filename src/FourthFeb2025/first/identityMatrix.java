@@ -20,6 +20,34 @@ public class identityMatrix {
          *  [1, 0, 0]]
          * Above 3x3 matrix is not Identity Matrix
          */
+
+        int[][] A = { {0, 0, 1},
+                {0, 1, 0},
+                {1, 0, 0} };
+
+        for(int i=0;i<A.length;i++){
+            int c = 0;
+            for(int j=0;j<A.length;j++){
+                if(i==j){
+                    if(A[i][j]!=1){
+                        c++;
+                        break;
+                    }
+                }
+                else if(A[i][j]!=0){
+                    c++;
+                    break;
+                }
+            }
+            if(c==0){
+                System.out.println("Is Identity Matrix");
+                break;
+            }
+            else{
+                System.out.println("Not Identity Matrix");
+                break;
+            }
+        }
     }
 
 }
