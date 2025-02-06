@@ -11,6 +11,15 @@ public class MainDiagonalSum {
          *  {-7 -8 9}}
          * ans = 15
          */
+        int[][] A = { {1, -2, -3},
+                    {-4, 5, -6},
+                    {-7, -8, 9} };
+        int ans = 0;
+
+        for(int i=0;i<A.length;i++){
+            ans += A[i][i];
+        }
+        System.out.println(ans);
     }
 
 }
