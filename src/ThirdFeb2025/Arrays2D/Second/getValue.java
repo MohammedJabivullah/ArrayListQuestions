@@ -7,7 +7,7 @@ public class getValue {
          * int[][] a = {{2, 4, 6, 8}, {1, 2, 3, 4}};
          * Remember each set of curly braces represents a row, or a single dimensional array.
          */
-        System.out.print(a[0][2]);
+
     }
 
 }

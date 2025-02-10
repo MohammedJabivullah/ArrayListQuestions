@@ -16,6 +16,19 @@ public class RangeSum {
                {2,8} = 9+2+1-5+8+6+4 = 25
                {0,5} = 5+7+9+2+1-5   = 18
          */
+        int[] A = {5,7,9,2,1,-5,8,6,4};
+        int[][] B = {{0,3},
+                {1,4},
+                {2,8},
+                {0,5}};
+
+        for(int i=0;i<B.length;i++){
+            int C = 0;
+            for(int j=B[i][0];j<=B[i][1];j++){
+                C +=A[j];
+            }
+            System.out.print(C+" ");
+        }
     }
 
 }
