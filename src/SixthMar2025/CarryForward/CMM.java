@@ -13,6 +13,7 @@ public class CMM {
         Solution(A);
     }
     public static void Solution(int[] A){
+        //Finding Min and Max elements
         int min = A[0];
         int max = A[0];
         for(int i=0;i<A.length;i++){
@@ -24,7 +25,7 @@ public class CMM {
             }
         }
 
-
+        // Solution
         int min_i = -1;
         int max_i = -1;
         int min_l = A.length;
